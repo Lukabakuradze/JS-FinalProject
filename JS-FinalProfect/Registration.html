@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-branding">Accuweather  &#176</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"> <a href="" class="nav-link">Cities</a></li>
+                <li class="nav-item"> <a href="registration.html" class="nav-link">Sign in / Sign up</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </nav>
+
+    </header>
+    <main>
+        <div class="vl"></div>
+
+        <div class="two-two">
+            <div class="main-wrapper">
+                <form action="" method="POST" id="registration">
+
+                    <div class="registration-form">
+                        <label for="username"></label>
+                        <input type="text" id="username" class="registration-lables" name="usernameValue"
+                            placeholder="Username.." />
+                        <div class="error-text" id="error_usernameValue"></div>
+                    </div>
+
+                    <div class="registration-form">
+                        <label for="email"></label>
+                        <input type="text" id="email" class="registration-lables" name="email" placeholder="Email.." />
+
+                        <div class="error-text" id="error_email"></div>
+                    </div>
+
+                    <div class="registration-form">
+                        <div class="test">
+                            <input type="password" id="password1" class="registration-lables" name="password"
+                                placeholder="Password.." />
+    
+                            <i class="fa-sharp fa-solid fa-eye" id="eye-icon"></i>
+                        </div>
+                        <div class="error-text" id="error_password"></div>
+                    </div>
+
+                    <div class="registration-form">
+                        <label for="passw2"></label>
+                        <input type="password" id="password2" class="registration-lables" name="password2"
+                            placeholder="Repeat password.." />
+                       
+                        <div class="error-text" id="error_password2"></div>
+                    </div>
+
+                    <div class="registration-form">
+                        <input type="radio" name="gender" class="genders" />
+                        <label for=""><i class="fa-sharp fa-solid fa-person" id="Gender-male"></i></label>
+                        <input type="radio" name="gender" class="genders" />
+                        <label for=""><i class="fa-solid fa-person-dress" id="Gender-female"></i></label>
+                        <div class="error-text" id="error_gender"></div>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="agree" id="agree" />
+                        <a href=""> <label for="" id="agreement">I agree terms and conditions</label></a>
+                        <div class="error-text" id="error_agree"></div>
+                    </div>
+
+                    <button type="submit" class="Register-button">Register now</button>
+                </form>
+
+            </div>
+
+            <div class="second">
+
+                <form action="" method="POST" id="login">
+
+                    <div class="registration-form">
+                        <label for="username"></label>
+                        <input type="text" id="saveemail" class="registration-lables" name="usernameValue"
+                        placeholder="Email.." />
+                        
+                    </div>
+
+                    <div class="registration-form">
+                        <label for="passw"></label>
+                        <input type="password" id="password3" class="registration-lables" name="password"
+                         placeholder="Password.." />
+                    </div>
+
+                    <button type="submit" class="Register-button">Log in</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <div class="main-footer">
+            <span class="footer-text">© 2022 AccuWeather, Inc. "AccuWeather" and the sun design are registered
+                trademarks of AccuWeather, Inc. All rights reserved.</span>
+            <span class="footer-text2">
+                <a href="">Terms of use|</a>
+                <a href="">privacy policy|</a>
+                <a href="">Cookie policy|</a>
+                <a href="">TAG disclosure|</a>
+            </span>
+        </div>
+    </footer>
+
+   
+    <script src="registration.js"></script>
+    <script src="hamburgers.js"></script>
+</body>
+
+</html>
